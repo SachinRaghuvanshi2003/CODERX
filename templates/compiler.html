@@ -1,0 +1,291 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+    <style>
+      * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+}
+
+*, html {
+    --primaryGradient: linear-gradient(93.12deg, #581B98 0.52%, #9C1DE7 100%);
+    --secondaryGradient: linear-gradient(268.91deg, #581B98 -2.14%, #9C1DE7 99.69%);
+    --primaryBoxShadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    --secondaryBoxShadow: 0px -10px 15px rgba(0, 0, 0, 0.1);
+    --primary: #581B98;
+}
+      header {
+            z-index: 1;
+padding: 0 5rem;
+width: 100%;
+position: fixed;
+top: 0;
+min-height: 75px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #fff;
+box-shadow: 0 1rem 1rem -1rem rgba(55, 56, 58, 0.2);
+
+}
+
+@media (max-width: 650px) {
+header {
+flex-wrap: wrap;
+}
+}
+
+@media (max-width: 650px) {
+.logo {
+margin: 15px auto;
+}
+}
+
+nav {
+font-weight: 400;
+}
+
+@media (max-width: 650px) {
+nav {
+margin: 15px auto;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+nav li {
+padding-bottom: 8px;
+}
+}
+
+nav > ul {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+nav li {
+padding: 0px 10px 0px 10px;
+}
+.column-60 {
+float: left;
+width: 60%;
+padding: 0 4%;
+}
+
+.column-40 {
+float: left;
+padding: 0 4%;
+width: 40%;
+}
+
+.grid::after {
+content: "";
+display: table;
+clear: both;
+}
+
+
+
+
+.btn {
+text-transform: uppercase;
+font-weight: 600;
+color: #fff;
+background-color: #5d63ed;
+padding: 1.7rem 2.5rem;
+margin: 1.5rem 0;
+height: 5rem;
+border: 0;
+border-radius: 5px;
+cursor: pointer;
+outline:none;
+}
+
+.btn:hover {
+background-color: #2f1e84;
+transition: background-color 1s;
+}
+
+.logo-img {
+width: 100%;
+max-width: 200px;
+}
+
+@media (max-width: 650px) {
+.logo-img {
+margin: 0 auto;
+}
+}
+ 
+#gentext{
+width: 50%;
+padding: 10px;
+margin-top:6cm ;
+margin-left:2cm;
+}
+@media (max-width: 650px){
+    h1 {
+      font-size: 2.4rem;
+    }
+  }
+  
+  h2 {
+    margin-bottom: 5rem;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    color: #2f1e84;
+    text-decoration: none;
+  }
+  #compilerdisplay1{
+    margin-top:2cm;
+    display: none;
+  }
+  #compilerdisplay2{
+    margin-top:2cm;
+    display: none;
+  }
+  #compilerdisplay3{
+    margin-top:2cm;
+    display: none;
+  }
+  #compilerdisplay4{
+    margin-top:2cm;
+    display: none;
+  }
+  #compilerdisplay5{
+    margin-top:2cm;
+    display: none;
+  }
+  #im2{
+                margin-top: 5%;
+                height: 90%;
+                margin-left: 2%;
+            }
+            #first{
+                margin-top: -28%;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 38px;
+                margin-left: 50%;
+                color:  #581B98;
+            }
+            #test1{
+              margin-top: 10cm;
+              margin-left:3.8cm;
+              background:none;
+              border:1.2px solid var(--primary);
+              border-radius: 10cm;
+              padding: 15px;
+            }
+            #img3{
+              height: 2cm;
+              width: 2cm;
+            }
+    </style>
+	<title> 
+		CodeRX: Compiler
+	</title> 
+    <script>
+        function getJava(){
+          document.getElementById("compilerdisplay1").style.display="block";
+          document.getElementById("compilerdisplay2").style.display="none";
+          document.getElementById("compilerdisplay3").style.display="none";
+          document.getElementById("compilerdisplay4").style.display="none";
+          document.getElementById("compilerdisplay5").style.display="none";
+        }
+        function getC(){
+          document.getElementById("compilerdisplay1").style.display="none";
+          document.getElementById("compilerdisplay2").style.display="none";
+          document.getElementById("compilerdisplay3").style.display="none";
+          document.getElementById("compilerdisplay4").style.display="block";
+          document.getElementById("compilerdisplay5").style.display="none";
+        }
+        function getPython(){
+          document.getElementById("compilerdisplay1").style.display="none";
+          document.getElementById("compilerdisplay2").style.display="none";
+          document.getElementById("compilerdisplay3").style.display="block";
+          document.getElementById("compilerdisplay4").style.display="none";
+          document.getElementById("compilerdisplay5").style.display="none";
+
+        }
+        function getCpp(){
+  
+          document.getElementById("compilerdisplay1").style.display="none";
+          document.getElementById("compilerdisplay2").style.display="block";
+          document.getElementById("compilerdisplay3").style.display="none";
+          document.getElementById("compilerdisplay4").style.display="none";
+          document.getElementById("compilerdisplay5").style.display="none";
+
+        }
+        function getBash(){
+    
+          document.getElementById("compilerdisplay1").style.display="none";
+          document.getElementById("compilerdisplay2").style.display="none";
+          document.getElementById("compilerdisplay3").style.display="none";
+          document.getElementById("compilerdisplay4").style.display="none";
+          document.getElementById("compilerdisplay5").style.display="block";
+
+        }
+    </script>
+</head> 
+
+<body> 
+    <header id="header">
+        <div class="logo">
+          <img class="logo-img" id="header-img" src="{{ url_for('static', filename='images/CodeRX_1_-removebg-preview.png') }}" alt="CodeRX logo" />
+        </div>
+      
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#why">Why</a></li>
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#download">Download</a></li>
+          </ul>
+        </nav>
+      </header>
+      <img id="im2"src="https://img.freepik.com/premium-photo/happy-3d-cartoon-man-using-laptop-siting-transparent-white-background_973886-461.jpg">
+      <h1 id="first">Coding births ideas,<BR>compiling turns them into digital symphonies.</h1><p id="second"></p></h1>
+        <button id="test1" onclick="getJava()"><img id="img3" src="https://icon-library.com/images/java-icon-png/java-icon-png-15.jpg"></button>
+        <button id="test1" onclick="getPython()"><img id="img3" src="https://freepngimg.com/thumb/categories/1402.png"></button>
+        <button id="test1" onclick="getBash()"><img id="img3" src="data:image/png;base64,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"></button>
+        <button id="test1" onclick="getCpp()"><img id="img3" src="https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png"></button>
+        <button id="test1" onclick="getC()"><img id="img3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1853px-C_Programming_Language.svg.png"></button>
+	<div id="compilerdisplay1" data-pym-src= 
+    "https://www.jdoodle.com/plugin/v0/7ece1011d9642cb8f200723148ded325/cd1c68b821191625780a29f0b0b0dfe0"> 
+	</div> <br>
+    <div id="compilerdisplay2" data-pym-src= 
+    "https://www.jdoodle.com/plugin/v0/7ece1011d9642cb8f200723148ded325/b1e3e475245dd8736787dd1648d6d972"> 
+	</div> 
+   <div id="compilerdisplay3" data-pym-src="https://www.jdoodle.com/plugin/v0/7ece1011d9642cb8f200723148ded325/fa4fd84884099ae80c07c98a239304f3">
+
+   </div>
+   <div id="compilerdisplay4" data-pym-src="https://www.jdoodle.com/plugin/v0/7ece1011d9642cb8f200723148ded325/70e4e29a372853043479b9baff9a4881">
+
+   </div>
+   <div id="compilerdisplay5" data-pym-src="https://www.jdoodle.com/plugin/v0/7ece1011d9642cb8f200723148ded325/bc996c39f0c36e1fe9b36168f5c18e1c"></div>
+	<!-- This script tag contains the 
+		javascript code in the written URL -->
+	<script src= 
+"https://www.jdoodle.com/assets/jdoodle-pym.min.js"
+		type="text/javascript"> 
+	</script> 
+</body> 
+<script>
+    $SCRIPT_ROOT = ((request.script_root|tojson ));
+  </script>
+
+</html> 

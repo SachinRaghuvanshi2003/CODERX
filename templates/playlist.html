@@ -1,0 +1,434 @@
+<html>
+    <head>
+        <title>SUGGESTION | CODERX</title>
+        <style>
+                   header {
+            z-index: 1;
+padding: 0 5rem;
+width: 100%;
+position: fixed;
+top: 0;
+min-height: 75px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #fff;
+box-shadow: 0 1rem 1rem -1rem rgba(55, 56, 58, 0.2);
+}
+
+@media (max-width: 650px) {
+header {
+flex-wrap: wrap;
+}
+}
+
+@media (max-width: 650px) {
+.logo {
+margin: 15px auto;
+}
+}
+
+nav {
+font-weight: 400;
+}
+
+@media (max-width: 650px) {
+nav {
+margin: 15px auto;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+nav li {
+padding-bottom: 8px;
+}
+}
+
+nav > ul {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+nav li {
+padding: 0px 10px 0px 10px;
+}
+.column-60 {
+float: left;
+width: 60%;
+padding: 0 4%;
+}
+
+.column-40 {
+float: left;
+padding: 0 4%;
+width: 40%;
+}
+
+.grid::after {
+content: "";
+display: table;
+clear: both;
+}
+
+
+
+
+.btn {
+text-transform: uppercase;
+font-weight: 600;
+color: #fff;
+background-color: #5d63ed;
+padding: 1.7rem 2.5rem;
+margin: 1.5rem 0;
+height: 5rem;
+border: 0;
+border-radius: 5px;
+cursor: pointer;
+outline:none;
+}
+
+.btn:hover {
+background-color: #2f1e84;
+transition: background-color 1s;
+}
+
+.logo-img {
+width: 100%;
+max-width: 200px;
+}
+
+@media (max-width: 650px) {
+.logo-img {
+margin: 0 auto;
+}
+}
+ 
+footer {
+margin-top: 10cm;
+margin-bottom: 0;
+padding: 2.5rem 5rem;
+background-color: #2f1e84;
+color: #fff;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+@media (max-width: 660px) {
+footer {
+flex-direction: column;
+align-items: center;
+}
+}
+
+#footer-logo {
+margin-top: 0.8rem;
+display: flex;
+justify-content: flex-start;
+}
+
+#footer-info > ul {
+display: flex;
+justify-content: flex-end;
+}
+
+@media (max-width: 660px) {
+#footer-info > ul {
+margin: 15px auto;
+}
+}
+
+@media (max-width: 460px) {
+#footer-info > ul {
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+#footer-info > ul > li {
+padding-bottom: 10px;
+}
+}
+
+#footer-info > ul > li {
+padding: 0 10px;
+}
+
+#footer-info > ul > li > a {
+color: #fff;
+}
+
+#copyright {
+margin-top: 1.5rem;
+padding-right: 10px;
+display: flex;
+justify-content: flex-end;
+font-size: 1.2rem;
+}
+#gentext{
+width: 50%;
+padding: 10px;
+margin-top:6cm ;
+margin-left:9cm;
+}
+@media (max-width: 650px){
+    h1 {
+      font-size: 2.4rem;
+    }
+  }
+  
+  h2 {
+    margin-bottom: 5rem;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    color: #2f1e84;
+    text-decoration: none;
+  }
+            BODY{
+                margin-bottom: 5%;
+            }
+            #heading1{
+                margin-left: 50px;
+                text-align: left;
+                margin-top: 18%;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            #img1{
+                margin-left: 50%;
+                margin-top: -20%;
+            }
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+              }
+              html {              
+                scroll-behavior: smooth;
+              }
+              section {
+                min-height: 100vh;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+              }
+              #sec-2 {
+                margin-top: -30%;
+              }
+              .scroll-down {
+                height: 50px;
+                width: 30px;
+                border: 2px solid black;
+                position: absolute;
+                left: 50%;
+                bottom: 30px;
+                border-radius: 50px;
+                cursor: pointer;
+              }
+              .scroll-down::before,
+              .scroll-down::after {
+                content: "";
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                height: 10px;
+                width: 10px;
+                transform: translate(-50%, -100%) rotate(45deg);
+                border: 2px solid black;
+                border-top: transparent;
+                border-left: transparent;
+                animation: scroll-down 1s ease-in-out infinite;
+              }
+              .scroll-down::before {
+                top: 30%;
+                animation-delay: 0.3s;
+              }
+              
+              @keyframes scroll-down {
+                0% {
+                  opacity: 0;
+                }
+                30% {
+                  opacity: 1;
+                }
+                60% {
+                  opacity: 1;
+                }
+                100% {
+                  top: 90%;
+                  opacity: 0;
+                }
+              }
+
+              #heading2{
+                margin-top: 80px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-align: center;
+              }
+             #headings{
+                margin-left: -270%;
+                margin-top: 10%;
+             }
+             .vids{
+                margin-left: -200%;
+                margin-top: 40px;
+             }
+             .vid1{
+                margin-left: -830px;
+                margin-top: 5%;
+             }
+             .caption1{
+                margin-left: -820px;
+                margin-top: 2%;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             }
+             .vid2{
+                margin-top: -55.5%;
+             }
+             .caption2{
+                margin-top: -3.5%;
+             }
+             .vid3{
+                margin-top: -56%;
+                margin-right: -190%;
+             }
+             .caption3{
+                margin-top: -3.5%;
+                margin-right: -190%;
+             }
+        </style>    
+    </head>
+    <body>
+      <header id="header">
+        <div class="logo">
+          <img class="logo-img" id="header-img" src="{{ url_for('static', filename='images/CodeRX_1_-removebg-preview.png') }}" alt="CodeRX logo" />
+        </div>
+      
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#why">Why</a></li>
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#download">Download</a></li>
+          </ul>
+        </nav>
+      </header>
+        <h1 id="heading1">
+                WANT TO LEARN MORE? <BR><BR>
+                WE ARE HERE TO ASSIST!!
+        </h1>
+        <img id="img1" src="https://camo.githubusercontent.com/cae12fddd9d6982901d82580bdf321d81fb299141098ca1c2d4891870827bf17/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313336302f302a37513379765349765f7430696f4a2d5a2e676966">
+        <section id="sec-1">
+            <div class="container">
+              <a href="#sec-2">
+                <div class="scroll-down"></div>
+              </a>
+            </div>
+          </section>
+          <section id="sec-2">
+            <div class="container">
+              <h1 id="heading2">DEVELOP YOUR SKILLS WITH US!!</h1>
+              <h3 id="headings"><u>JAVA</u></h3>
+              <div class="videos1">
+                <div class="video1">
+                    <iframe class="vid1"width="360" height="215" src="https://www.youtube.com/embed/xk4_1vDrzzo?si=_cLZ8nsk4Ma5y-0b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <br>
+                    <div class="caption1" style="color:black">
+                        <p>JAVA FOR FREE ☕️</p>
+                    </div>
+                </div>
+                <div class="video2">
+                    <iframe class="vid2" width="360" height="215" src="https://www.youtube.com/embed/A74TOX803D0?si=3-GUhC1iMMxP0se8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <br>
+                    <div class="caption2" style="color:black">
+                        <p>LEARN JAVA FOR FREE , FREECODECAMP</p>
+                    </div>  
+                </div>
+                <div class="video3">
+                    <iframe class="vid3" width="360" height="215" src="https://www.youtube.com/embed/eIrMbAQSU34?si=EP2WBvD6Uaitw7Kl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <br>
+                    <div class="caption3" style="color:black">
+                        <p>JAVA TUTORIAL FOR BEGINNERS</p>
+                    </div>
+            </div>
+            <h3 id="headings"><u>CPP</u></h3>
+            <div class="videos1">
+                <div class="video1">
+                    <iframe class="vid1"width="360" height="215" src="https://www.youtube.com/embed/i_5pvt7ag7E?si=5LyGM9kVeR_oZ3Eq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <br>
+                    <div class="caption1" style="color:black">
+                        <p>OOPS CONCEPT IN CPP || PART-1</p>
+                    </div>
+                    <div class="video2">
+                        <iframe class="vid2" width="360" height="215" src="https://www.youtube.com/embed/e7sAf4SbS_g?si=7HEYIMULIGJ9vKRF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <br>
+                        <div class="caption2" style="color:black">
+                            <p>COMPLETE C++ TUTORIAL , ONE SHOT C++</p>
+                        </div>  
+                    </div>
+                    <div class="video3">
+                        <iframe CLASS="vid3" width="360" height="215" src="https://www.youtube.com/embed/RRVYpIET_RU?si=sBdQ4_digHESSy1m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <br>
+                        <div class="caption3" style="color:black">
+                            <p>COMPLETE STL C++ IN ONE HOUR</p>
+                        </div>
+                </div>
+                <h3 id="headings"><u>AI & ML</u></h3>
+                <div class="videos1">
+                    <div class="video1">
+                        <iframe class="vid1" width="360" height="215" src="https://www.youtube.com/embed/NWONeJKn6kc?si=fol-xE1eorTGbGIH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <br>
+                        <div class="caption1" style="color:black">
+                            <p>MACHINE LEARNING COURSE FOR BEGINNERS</p>
+                        </div>
+                </div>
+                <div class="video2">
+                    <iframe class="vid2" width="360" height="215" src="https://www.youtube.com/embed/5NgNicANyqM?si=2N74erTG_Gi7ktc5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <br>
+                    <div class="caption2" style="color:black">
+                        <p>HARVARD CS50 , LEARN AI AND ML</p>
+                    </div>  
+                </div>
+                <div class="video3">
+                    <iframe class="vid3" width="360" height="215" src="https://www.youtube.com/embed/JMUxmLyrhSk?si=d6BBcCWeJPq4nMzg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <br>
+                    <div class="caption3" style="color:black">
+                        <p>ARTIFICIAL INTELLIGENCE FULL COURSE</p>
+                    </div>
+            </div>
+            <h3 id="headings"><u>WEB DEV</u></h3>
+            <div class="videos1">
+                <div class="video1">
+                    <iframe CLASS="vid1" width="360" height="215" src="https://www.youtube.com/embed/ESnrn1kAD4E?si=NSSjr43_M6YBeurl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <br>
+                    <div class="caption1" style="color:black">
+                        <p>WEB DEVELOPMENT FULL COURSE</p>
+                    </div>
+            </div>
+            <div class="video2">
+                <iframe class="vid2" width="360" height="215" src="https://www.youtube.com/embed/HVjjoMvutj4?si=yfvEkr2jUdsh5hnz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <br>
+                <div class="caption2" style="color:black">
+                    <p>30 HOURS CRASH COURSE WEB DEVELOPMENT</p>
+                </div>  
+            </div>
+            <div class="video3">
+                <iframe class="vid3" width="360" height="215" src="https://www.youtube.com/embed/k7ELO356Npo?si=Izi83CKGjyul58nD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <br>
+                <div class="caption3" style="color:black">
+                    <p>FULL HTML COURSE | COMPLETE HTML IN 5 HOURS</p>
+                </div>
+        </div>
+            </div>
+          </section>
+    </body>
+</html>

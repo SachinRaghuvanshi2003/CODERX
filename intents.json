@@ -1,0 +1,85 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "How are you",
+          "Is anyone there?",
+          "Hello",
+          "Good day"
+        ],
+        "responses": [
+          "Hey :-)",
+          "Hello, thanks for visiting",
+          "Hi there, what can I do for you?",
+          "Hi there, how can I help?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": [
+          "See you later, thanks for visiting",
+          "Have a nice day",
+          "Bye! Come back again soon."
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      },
+      {
+        "tag": "services",
+        "patterns": [
+          "Which services do you have?",
+          "What kinds of services are there?",
+          "What do you sell?"
+        ],
+        "responses": [
+          "We have various services, including mental health well being and enchancing development skills.",
+          "Check out our services, by clicking on the tab given in the top bar :)",
+          "We are a one stop hub for healing coding depression, check out our services!"
+        ]
+      },
+      {
+        "tag": "payments",
+        "patterns": [
+          "Do you take credit cards?",
+          "Do you accept Mastercard?",
+          "Can I pay with Paypal?",
+          "Are you cash only?"
+        ],
+        "responses": [
+          "Our entire range of services are free of cost.",
+          "We accept only gratitude! Rest everything is free of cost at CodeRX"
+        ]
+      },
+      {
+        "tag": "depression",
+        "patterns": [
+          "I am not feeling good?",
+          "How do I improve myself at coding?",
+          "I am feeling low, when it comes to coding?"
+        ],
+        "responses": [
+          "Contact any of the medical professionals by going to the 'Get Help' tab.",
+          "We have a range of services to improve your coding skills and mental health. Don't worry everything will be fine!"
+        ]
+      },
+      {
+        "tag": "funny",
+        "patterns": [
+          "Tell me a joke!",
+          "Tell me something funny!",
+          "Do you know a joke?"
+        ],
+        "responses": [
+          "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+          "What did the buffalo say when his son left for college? Bison."
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodeRX</title>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+          <a href="/">
+          <img class="logo-img" id="header-img" src="{{ url_for('static', filename='images/CodeRX_1_-removebg-preview.png') }}" alt="CodeRX logo" />
+        </a>
+        </div>
+      
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#why">Why</a></li>
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#download">Services</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <main>
+        <section id="hero">
+          <div class="grid">
+            <div class="column-60">
+              <h1>Your Path to Code Confidence!</h1>
+              <p id="description">Spend less time thinking about the negatives and focus on improving your skill set.</p>
+              <button class="btn">Get Started</button>
+            </div>
+            <div class="column-40">
+               <div class="image-div">
+                <img id="hero-img" src="{{ url_for('static', filename='images/10115990_4372935.svg') }}" alt="Remedi mobile app">
+              </div>
+            </div>
+          </div>
+      
+        </section>
+      
+        <section id="why">
+          <h2>Why you should choose CodeRX</h2>
+          <div class="container">
+            <div class="card">
+              <div class="icon">
+                <img src="https://raw.githubusercontent.com/sfoteini/responsive-web-design-freeCodeCamp/e7160509c233bbeb6891c405fe2256bc00cd3110/product-landing-page/images/easyToUse.svg" alt="easy to use icon">
+              </div>
+              <div class="desc">
+                <h3>Easy to Use</h3>
+                <p>Manage your medications with our user-friendly app. Get personalized reminders on time and stay connected to your caregivers.
+                </p>
+              </div>
+            </div>
+      
+            <div class="card">
+              <div class="icon">
+                <img src="https://raw.githubusercontent.com/sfoteini/responsive-web-design-freeCodeCamp/e7160509c233bbeb6891c405fe2256bc00cd3110/product-landing-page/images/dataPrivacy.svg" alt="data privacy icon">
+              </div>
+              <div class="desc">
+                <h3>Data Privacy</h3>
+                <p>Your health is a private matter. We will never hand over your personal data to third parties.
+                </p>
+              </div>
+            </div>
+      
+            <div class="card">
+              <div class="icon">
+                <img src="https://raw.githubusercontent.com/sfoteini/responsive-web-design-freeCodeCamp/68737b6e7c403c6a96fc51fce17485afd71da644/product-landing-page/images/research.svg" alt="data privacy icon">
+              </div>
+              <div class="desc">
+                <h3>Research</h3>
+                <p>We use data gathered through our app to improve the healthcare system. We work together with healthcare companies who support us with scientific analyses of aggregated data.
+                </p>
+              </div>
+            </div>
+      
+          </div>
+        </section>
+      
+        <section id="features">
+          <h2>Awesome Key Features</h2>
+          <div class="grid">
+            <div class="column-40">
+              <div class="image-div">
+                <img src="{{ url_for('static', filename='images/wfh_1.svg') }}" alt="Remedi mobile app" width="500" height="600">
+              </div>
+            </div>
+      
+            <div class="column-60">
+              <ol>
+                <li>
+                  <h3 id="pills">Med and refill reminders</h3>
+                  <p>Schedule your med reminders, track taken and missed doses and set refill reminders.</p>
+                </li>
+                <li>
+                  <h3 id="med-report">Medication adherence reports</h3>
+                  <p>Check your weekly and monthly adherence rates based on the number of taken and missed doses.</p>
+                </li>
+                <li>
+                  <h3 id="family">Teamwork</h3>
+                  <p>Add your most trusted family members and friends to send them a notification if you accidentally miss a medication.</p>
+                </li>
+                <li>
+                  <h3 id="doctor-icon">Communicate with Your Doctor</h3>
+                  <p>Show your doctor how your health has progressed since the last appointment.</p>
+                </li>
+              </ol>
+            </div>
+      
+          </div>
+        </section>
+      
+        <section id="info">
+          <div>
+            <h2>Medication Adherence</h2>
+            <p>Medication adherence is the extent to which a person’s behaviour (taking medication, following a diet, and/or executing lifestyle changes) corresponds with agreed recommendations from a health care provider</p>
+            <p>A World Health Organization report on adherence to long-term therapies suggests that patients adhere to only 50% of drugs prescribed for chronic diseases in developed nations, a figure that is even lower in developing countries.</p>
+          </div>
+          <iframe id="video" height="315" src="https://www.youtube.com/embed/jccBSbyActg?rel=0&amp;controls=0&amp;showinfo=0" allowfullscreen></iframe>
+        </section>
+      
+        <section id="download">
+          <h2>Services By CodeRX</h2>
+          <div class="container">
+            <div class="card" id="patient">
+              <div class="product-logo">
+                <img class="logo-img" src="{{ url_for('static', filename='images/CodeRX_1_-removebg-preview.png') }}" alt="Remedi logo">
+              </div>
+              <div class="desc">
+                <h3>Developers Space</h3>
+                <ol>
+                 <a href="codingpractice"> <li>CodeRX Practice</li></a>
+                 <a href="codeplayground"> <li>CodeRX Genie</li></a>
+                 <a href="playlist"> <li>CodeRX Playlist</li></a>
+                 <a href="compiler"> <li>CodeRX Compiler</li></a>
+                 <a href="collab"> <li>CodeRX Collab</li></a>
+                 <a href="devspace"> <li>CodeRX Dev Space</li></a>
+                 <a href="documentation"> <li>CodeRX Documentation</li></a>
+                </ol>
+              </div>
+              <button class="btn">Visit</button>
+            </div>
+      
+            <div class="card" id="doctor">
+              <div class="product-logo">
+                <img class="logo-img" src="{{ url_for('static', filename='images/CodeRX_1_-removebg-preview.png') }}" alt="Remedi for doctors logo">
+              </div>
+              <div class="desc">
+                <h3>Mental Well Being</h3>
+                <ol>
+                  <a href="mentalhealthsurvey"> <li>CodeRX Mental Health Analysis</li></a>
+                  <a href="community"> <li>CodeRX Chat Community</li></a>
+                  <a href="voicecommunity"> <li>CodeRX Voice Community</li></a>
+                  <a href="gethelp"> <li>CodeRX Get Help</li></a>
+                </ol>
+              </div>
+              <button class="btn">Visit</button>
+            </div>
+          </div>
+        </section>
+      
+        <section id="contact">
+          <h2>Contact</h2>
+          <div class="grid">
+            <div class="column-60">
+              <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <div class="form-group">
+                  <label id="name-label" for="name">Name</label>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Name" required />
+                </div>
+                <div class="form-group">
+                  <label id="email-label" for="email">Email</label>
+                  <input name="email" class="form-control" id="email" type="email" placeholder="Email address" required />
+                </div>
+                <div class="form-group">
+                  <p>Message</p>
+                  <textarea id="message" class="input-textarea" name="message" placeholder="Enter your message here..."></textarea>
+                </div>
+                <div class="form-group">
+                  <label id="submit-label" for="submit"></label>
+                  <input id="submit" type="submit" value="Submit" class="btn" />
+                </div>
+              </form>
+            </div>
+      
+            <div class="column-40">
+              <div class="image-div">
+                <img src="https://raw.githubusercontent.com/sfoteini/responsive-web-design-freeCodeCamp/8b3f0ffc76e89fb3e2a9c78129ee320b37d80be9/product-landing-page/images/contact.svg" alt="Contact icon" width="472" height="495">
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <footer>
+          <div id="footer-logo">
+            <img class="logo-img" src="{{ url_for('static', filename='images/static/output-onlinepngtools2.png') }}" alt="CodeRX logo" />
+          </div>
+          <div id="footer-info">
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Costumer Support</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <div id="copyright">Copyright 2023, CodeRX</div>
+          </div>
+        </footer>
+      
+      </main>
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Chat support</h4>
+                    <p class="chatbox__description--header">Hi Mate! My name is RX. How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+        </div>
+    </div>
+</div>
+
+<script>
+  $SCRIPT_ROOT = ((request.script_root|tojson ));
+</script>
+<script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>

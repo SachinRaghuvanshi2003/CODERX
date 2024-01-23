@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeRX: Mental Health Survey</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='stylesurvey.css') }}">
+ 
+</head>
+<body>
+  <header id="header">
+    <div class="logo">
+      <img class="logo-img" id="header-img" src="{{ url_for('static', filename='images/CodeRX_1_-removebg-preview.png') }}" alt="CodeRX logo" />
+    </div>
+  
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#why">Why</a></li>
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#download">Download</a></li>
+      </ul>
+    </nav>
+  </header>
+<div id="question">Question 1: How many hours do you sleep in a day?</div>
+<div class="options">
+  <div id="opt11">
+  <input type="radio" name="options" id="opt1" value="10">
+  <label for="opt1">>8 Hours</label>
+   </div>
+   <div id="opt11">
+  <input type="radio" name="options" id="opt2" value="6.5">
+  <label for="opt2">8 Hours</label>
+   </div>
+   <div id="opt11">
+  <input type="radio" name="options" id="opt3" value="3">
+  <label for="opt3">7 Hours</label>
+   </div>
+   <div id="opt11">
+  <input type="radio" name="options" id="opt4" value="0.5">
+  <label for="opt4">7 Hours></label>
+  </div>
+</div>
+
+<div class="wrapper">
+  <button  class="cta" onclick="getNext()">
+    <span>NEXT</span>
+    <span>
+      <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+          <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+          <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+        </g>
+      </svg>
+    </span> 
+  </button>
+</div>
+
+<div id="analysis">
+    <h2>Analysis of Responses</h2>
+    <p id="responseAnalysis"></p>
+  </div>
+<div id="div2"></div>
+<h2 id="diet"></h2>
+<div id="diet1"></div>
+<footer>
+  <div id="footer-logo">
+    <img class="logo-img" src="html-tag.png" alt="CodeRX logo" />
+  </div>
+  <div id="footer-info">
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Costumer Support</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div id="copyright">Copyright 2023, CodeRX</div>
+  </div>
+</footer>
+<script>
+  var questions = [
+    {
+      question: "Question 1: How many hours do you sleep in a day?",
+      options: [">8 Hours", "8 Hours", "7 Hours", "7 Hours>"]
+    },
+    {
+      question: "Question 2: Overall how would you rate your physical health?",
+      options: ["Excellent", "Good", "Average", "Poor"]
+    },
+    {
+      question: "Question 3: Overall how would you rate your mental health?",
+      options: ["Excellent", "Good", "Average", "Poor"]
+    },
+    {
+      question: "Question 4: During the past 4 weeks, have you had any problems with your work or daily life due to your physical health?",
+      options: ["No", "Somewhat No", "Somewhat Yes", "Yes"]
+    },
+    {
+      question: "Question 5: During the past 4 weeks, have you had any problems with your work or daily life due to any emotional problems, such as feeling depressed, sad or anxious? ",
+      options: ["No", "Somewhat No", "Somewhat Yes", "Yes"]
+    },
+    {
+      question: "Question 6: During the past 4 weeks, how often has your mental health affected your ability to get work done? ",
+      options: ["Not at all", "Not so Often", "Somewhat Often", "Very Often"]
+    },
+    {
+      question: "Question 7: Have you felt particularly low or down for more than 2 weeks in a row?",
+      options: ["Not at all", "Not so Often", "Somewhat Often", "Very Often"]
+    },
+    {
+      question: "Question 8: Have you noticed any change in your diet habits?",
+      options: ["No, It is the same", "Somewhat Change", "Yes, I eat too much", "Yes, I eat too less"]
+    },
+    {
+      question: "Question 9: When was the last time you were really happy?",
+      options: ["Few days ago", "Few weeks ago", "Few months ago", "Few years ago"]
+    },
+    {
+      question: "Question 10: When was the last time you had a positive outlook on life?",
+      options: ["Few days ago", "Few weeks ago", "Few months ago", "Few years ago"]
+    },
+  ];
+  var responses = [];
+  var currentQuestionIndex = 0;
+  var total_score=0;
+
+  function getNext() {
+    var selectedOption = document.querySelector('input[name="options"]:checked');
+
+    if (selectedOption) {
+      responses.push(selectedOption.value);
+    } else {
+      responses.push(null); // Handle unanswered questions
+    }
+
+    if (currentQuestionIndex < questions.length - 1) {
+      currentQuestionIndex++;
+      updateQuestion();
+    } else {
+      displayAnalysis();
+    }
+  }
+
+  function updateQuestion() {
+    var currentQuestion = questions[currentQuestionIndex];
+    document.getElementById("question").textContent = currentQuestion.question;
+
+    var options = document.querySelectorAll('input[name="options"]');
+    for (var i = 0; i < options.length; i++) {
+    //   options[i].value = currentQuestion.options[i];
+      options[i].nextElementSibling.textContent = currentQuestion.options[i];
+      options[i].checked = false;
+    }
+  }
+  function displayAnalysis() {
+    document.getElementById("question").style.display = "none";
+    document.querySelector('.options').style.display = "none";
+    document.querySelector(".cta").style.display = "none";
+    document.getElementById("diet").style.display = "block";
+    document.body.style.backgroundImage="url('https://wallpapers.com/images/hd/aesthetic-pastel-background-1080-x-1920-j2f2k1ndhng2jddk.jpg')";
+
+    var analysisDiv = document.getElementById("analysis");
+    analysisDiv.style.display = "block";
+    for(let i=0;i<responses.length;i++){
+       total_score+=parseFloat(responses[i]);
+    }
+    if(total_score>=90){
+        var responseAnalysis = document.getElementById("responseAnalysis");
+        responseAnalysis.textContent = "Your score is: " + total_score;
+        document.getElementById("div2").textContent="I'm pleased to inform you that your mental health is in excellent shape. Your state of well-being and emotional stability is evident, showcasing a positive outlook on life and effective coping strategies. To maintain this positive mental health, consider incorporating some beneficial practices into your routine. Regular physical exercise has been proven to enhance mood and reduce stress. Prioritizing adequate sleep is crucial for cognitive function and emotional resilience. Engaging in activities you enjoy, practicing mindfulness or meditation, and fostering strong social connections are additional avenues for sustaining mental well-being. Remember to take breaks when needed, set realistic goals, and be kind to yourself. Maintaining this holistic approach to self-care will contribute to the preservation of your remarkable mental health. If you ever feel the need for additional support, reaching out to friends, family, or a mental health professional is always a commendable step. Keep up the great work!"
+    }
+    else if(total_score>=80){
+        var responseAnalysis = document.getElementById("responseAnalysis");
+        responseAnalysis.textContent = "Your score is: " + total_score;
+        document.getElementById("div2").textContent="I'm delighted to share that your mental health is in good condition, reflecting a positive and resilient mindset. To further elevate and maintain this positive state, consider incorporating some additional practices into your routine. Prioritize self-care by ensuring you allocate time for activities that bring you joy and relaxation. Regular exercise is an excellent way to enhance both physical and mental well-being. Consider exploring mindfulness techniques or meditation to promote a sense of calm and focus. Establishing a consistent sleep routine can contribute significantly to overall mental health. Additionally, fostering strong social connections and open communication with friends and family can provide valuable support. Strive for a balanced and fulfilling lifestyle by setting realistic goals, and remember to celebrate your achievements along the way. Continue to be mindful of your mental well-being, and if ever needed, don't hesitate to seek professional guidance. Your commitment to enhancing your mental health is commendable, and I encourage you to maintain these positive habits for continued well-being."
+    }
+    else if(total_score>=70){
+        var responseAnalysis = document.getElementById("responseAnalysis");
+        responseAnalysis.textContent = "Your score is: " + total_score;
+        document.getElementById("div2").textContent="I want to acknowledge that your mental health is currently at a level that is generally positive, but it seems there is room for improvement. To enhance your mental well-being, consider incorporating some beneficial practices into your daily routine. Regular exercise has been shown to have positive effects on mood and overall mental health, so finding physical activities that you enjoy can be beneficial. Prioritizing a consistent sleep schedule is crucial for cognitive function and emotional resilience. Engaging in mindfulness practices, such as meditation or deep breathing exercises, can help manage stress and promote a sense of calm. Building and maintaining strong social connections is also vital, as having a support system can positively impact mental health. Additionally, consider setting realistic goals and breaking them down into manageable steps to create a sense of accomplishment. Remember that seeking professional support is a commendable and proactive step toward improving your mental well-being. By implementing these strategies, you can work towards achieving a more robust and resilient mental health state."
+    }
+    else if(total_score>=60){
+        var responseAnalysis = document.getElementById("responseAnalysis");
+        responseAnalysis.textContent = "Your score is: " + total_score;
+        document.getElementById("div2").textContent="I'm pleased to inform you that your mental health is currently above average, reflecting a commendable level of well-being and resilience. While you're already on a positive trajectory, there are ways to further elevate and maintain your mental health. Consider integrating mindfulness practices into your daily routine, such as meditation or deep-breathing exercises, to enhance emotional well-being and stress management. Regular physical activity, tailored to your preferences, can contribute to both mental and physical health. Prioritize quality sleep, ensuring you get the recommended hours to support cognitive function and mood regulation. Engaging in activities you find enjoyable and fulfilling can add an extra layer of positivity to your life. Building and nurturing strong social connections is essential, providing a valuable support network. Additionally, consider setting new personal and professional goals to stimulate continued growth and a sense of achievement. Striving for a balanced and holistic lifestyle will not only maintain your above-average mental health but may contribute to even greater well-being. Keep up the excellent work!"
+    }
+    else if(total_score>=50){
+        var responseAnalysis = document.getElementById("responseAnalysis");
+        responseAnalysis.textContent = "Your score is: " + total_score;
+        document.getElementById("div2").textContent="I want to inform you that your current mental health is assessed as average, indicating a baseline level of well-being. While this is a common and normal state, there are constructive steps you can take to enhance your mental health. Consider incorporating regular physical activity into your routine, as exercise has been linked to improved mood and cognitive function. Establishing a consistent sleep schedule is essential for overall mental well-being, so strive to prioritize sufficient and restful sleep. Exploring mindfulness practices, such as meditation or deep-breathing exercises, can aid in stress reduction and promote a sense of calm. Building and maintaining supportive social connections can contribute significantly to mental health, so invest time in nurturing relationships. Setting realistic goals, both personally and professionally, can provide a sense of purpose and accomplishment. Remember, seeking professional support if needed is a proactive step toward improvement. By integrating these strategies, you can actively work towards elevating your mental health beyond the average and towards a more positive state."
+    }
+    else if(total_score>=40){
+        var responseAnalysis = document.getElementById("responseAnalysis");
+        responseAnalysis.textContent = "Your score is: " + total_score;
+        document.getElementById("div2").textContent="I want to kindly inform you that your current mental health is assessed as below average, indicating that there may be room for improvement in your well-being. It's important to recognize that seeking support and taking proactive steps can positively impact your mental health. Begin by acknowledging your feelings and considering professional guidance, such as counseling or therapy, to explore and address underlying issues. Establishing a consistent and healthy sleep routine is crucial, as adequate rest contributes significantly to mental well-being. Incorporate stress-reducing activities into your routine, such as mindfulness practices, meditation, or deep-breathing exercises. Engaging in regular physical activity can also be beneficial, as exercise has been linked to improved mood and mental clarity. Building a supportive social network and sharing your feelings with trusted friends or family members can provide valuable emotional support. Remember, it's okay to seek help, and taking these steps can contribute to gradual improvements in your mental health."
+    }
+    else if(total_score>=30){
+        var responseAnalysis = document.getElementById("responseAnalysis");
+        responseAnalysis.textContent = "Your score is: " + total_score;
+        document.getElementById("div2").textContent="I want to address that your current mental health is evaluated as somewhat poor, and it's commendable that you're seeking insights into ways to improve it. Acknowledging your mental well-being is a crucial first step. Consider exploring professional support through therapy or counseling to help navigate and understand your feelings. Prioritizing self-care by establishing a consistent sleep routine can significantly impact your overall mental health. Introducing stress-management techniques, such as mindfulness practices or meditation, into your daily routine can provide a sense of calm and balance. Regular physical activity, tailored to your preferences and abilities, has been associated with improved mental health. Building a supportive network by connecting with friends, family, or support groups can offer emotional assistance. Remember, seeking help is a strength, and by taking these steps, you are actively working towards improving your mental health and overall well-being."
+    }
+    else{
+        var responseAnalysis = document.getElementById("responseAnalysis");
+        responseAnalysis.textContent = "Your score is: " + total_score;
+        document.getElementById("div2").textContent="I want to express my concern about the assessment of your current mental health as being very poor. It's crucial to prioritize your well-being, and seeking professional support is highly recommended. Consider reaching out to a mental health professional, such as a psychologist or psychiatrist, who can provide specialized guidance and therapeutic interventions. Additionally, confide in trusted friends or family members to build a support network around you. Engaging in self-care practices, like establishing a consistent sleep routine, incorporating mindfulness exercises, and engaging in activities that bring joy, can contribute positively to your mental health. Remember that seeking help is a courageous step, and a mental health professional can tailor a plan to address your specific needs. Don't hesitate to consult with a doctor to discuss your mental health concerns comprehensively and explore potential treatment options. Taking these steps demonstrates a proactive approach toward improving your mental health, and there is support available to assist you on this journey."
+    }
+
+  }
+</script>
+
+</body>
+</html> 

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <style>
+      #gentext{
+  width: 80%;
+  height: 60%;
+  padding: 10px;
+  margin-top:10cm ;
+  margin-left:3.8cm;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+      header {
+            z-index: 1;
+padding: 0 5rem;
+width: 100%;
+position: fixed;
+top: 0;
+min-height: 75px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #fff;
+box-shadow: 0 1rem 1rem -1rem rgba(55, 56, 58, 0.2);
+}
+
+@media (max-width: 650px) {
+header {
+flex-wrap: wrap;
+}
+}
+
+@media (max-width: 650px) {
+.logo {
+margin: 15px auto;
+}
+}
+
+nav {
+font-weight: 400;
+}
+
+@media (max-width: 650px) {
+nav {
+margin: 15px auto;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+nav li {
+padding-bottom: 8px;
+}
+}
+
+nav > ul {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+nav li {
+padding: 0px 10px 0px 10px;
+}
+.column-60 {
+float: left;
+width: 60%;
+padding: 0 4%;
+}
+
+.column-40 {
+float: left;
+padding: 0 4%;
+width: 40%;
+}
+
+.grid::after {
+content: "";
+display: table;
+clear: both;
+}
+
+
+
+
+.btn {
+text-transform: uppercase;
+font-weight: 600;
+color: #fff;
+background-color: #5d63ed;
+padding: 1.7rem 2.5rem;
+margin: 1.5rem 0;
+height: 5rem;
+border: 0;
+border-radius: 5px;
+cursor: pointer;
+outline:none;
+}
+
+.btn:hover {
+background-color: #2f1e84;
+transition: background-color 1s;
+}
+
+.logo-img {
+width: 100%;
+max-width: 200px;
+}
+
+@media (max-width: 650px) {
+.logo-img {
+margin: 0 auto;
+}
+}
+ 
+footer {
+margin-top: 0cm;
+padding: 2.5rem 5rem;
+background-color: #2f1e84;
+color: #fff;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+@media (max-width: 660px) {
+footer {
+flex-direction: column;
+align-items: center;
+}
+}
+
+#footer-logo {
+margin-top: 0.8rem;
+display: flex;
+justify-content: flex-start;
+}
+
+#footer-info > ul {
+display: flex;
+justify-content: flex-end;
+}
+
+@media (max-width: 660px) {
+#footer-info > ul {
+margin: 15px auto;
+}
+}
+
+@media (max-width: 460px) {
+#footer-info > ul {
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+#footer-info > ul > li {
+padding-bottom: 10px;
+}
+}
+
+#footer-info > ul > li {
+padding: 0 10px;
+}
+
+#footer-info > ul > li > a {
+color: #fff;
+}
+
+#copyright {
+margin-top: 1.5rem;
+padding-right: 10px;
+display: flex;
+justify-content: flex-end;
+font-size: 1.2rem;
+}
+
+@media (max-width: 650px){
+    h1 {
+      font-size: 2.4rem;
+    }
+  }
+  
+  h2 {
+    margin-bottom: 5rem;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    color: #2f1e84;
+    text-decoration: none;
+  }
+            #im2{
+                margin-top: 5%;
+                height: 90%;
+                margin-left: 5%;
+            }
+            #first{
+                margin-top: -28%;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 38px;
+                margin-left: 50%;
+                color: black;
+                
+            }
+            * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+}
+
+*, html {
+    --primaryGradient: linear-gradient(93.12deg, #581B98 0.52%, #9C1DE7 100%);
+    --secondaryGradient: linear-gradient(268.91deg, #581B98 -2.14%, #9C1DE7 99.69%);
+    --primaryBoxShadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    --secondaryBoxShadow: 0px -10px 15px rgba(0, 0, 0, 0.1);
+    --primary: #581B98;
+}
+
+/* CSS */
+.button-61 {
+  margin-top: 2cm;
+  align-items: center;
+  appearance: none;
+  border-radius: 4px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 1px -2px,rgba(0, 0, 0, .14) 0 2px 2px 0,rgba(0, 0, 0, .12) 0 1px 5px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Roboto,sans-serif;
+  font-size: .875rem;
+  font-weight: 500;
+  height: 36px;
+  justify-content: center;
+  letter-spacing: .0892857em;
+  line-height: normal;
+  min-width: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 0 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  will-change: transform,opacity;
+}
+
+.button-61:hover {
+  box-shadow: rgba(0, 0, 0, .2) 0 2px 4px -1px, rgba(0, 0, 0, .14) 0 4px 5px 0, rgba(0, 0, 0, .12) 0 1px 10px 0;
+}
+
+.button-61:disabled {
+  background-color: rgba(0, 0, 0, .12);
+  box-shadow: rgba(0, 0, 0, .2) 0 0 0 0, rgba(0, 0, 0, .14) 0 0 0 0, rgba(0, 0, 0, .12) 0 0 0 0;
+  color: rgba(0, 0, 0, .37);
+  cursor: default;
+  pointer-events: none;
+}
+
+.button-61:not(:disabled) {
+  background-color: #6200ee;
+}
+
+.button-61:focus {
+  box-shadow: rgba(0, 0, 0, .2) 0 2px 4px -1px, rgba(0, 0, 0, .14) 0 4px 5px 0, rgba(0, 0, 0, .12) 0 1px 10px 0;
+}
+
+.button-61:active {
+  box-shadow: rgba(0, 0, 0, .2) 0 5px 5px -3px, rgba(0, 0, 0, .14) 0 8px 10px 1px, rgba(0, 0, 0, .12) 0 3px 14px 2px;
+  background: #A46BF5;
+}
+    </style>
+    <title>CodeRX: Code Genie</title>
+  </head>
+  <body>
+    <header id="header">
+        <div class="logo">
+          <img class="logo-img" id="header-img" src="{{ url_for('static', filename='images/CodeRX_1_-removebg-preview.png') }}" alt="CodeRX logo" />
+        </div>
+        
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#why">Why</a></li>
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#download">Download</a></li>
+          </ul>
+        </nav>
+      </header>
+      <img id="im2"src="https://media0.giphy.com/media/mDYBgNVs7sBAeDv9Gt/giphy.gif?cid=6c09b952gdizv4kw3oa85z6ezzq0gs4yislotx2jhpujobrg&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s">
+        <h1 id="first">CodeRX Genie<BR>I am here for you,<BR>Let's Generate Quality Code Together!</h1><p id="second"></p></h1>
+    <form method="post">
+    <textarea id="gentext" name="gentext" rows="20" cols="100" style="resize: none;">{{output}}</textarea><br>
+    <input type="submit" style=" margin-left: 18cm;" class="button-61" value="Generate!">
+    </form>
+  </body>
+</html>
